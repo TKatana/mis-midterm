@@ -6,7 +6,7 @@
     <title>Contact Us - My Online Store</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+    <link rel="icon" href="img/33.ico" type="image/x-icon">
 </head>
 <body>
     <!-- Name: Turjjo Halder, ID: 2222589 -->
@@ -121,7 +121,7 @@
     padding: 12px;
     font-size: 16px;
     font-weight: 600;
-    background: #ff9100;
+    /* background: #ff9100; */
     color: #ffffff;
     border: none;
     border-radius: 5px;
@@ -130,7 +130,7 @@
 }
 
 .contact-form .btn:hover {
-    background: #e57c00;
+    background: #22b1ef;
 }
 </style>
 
@@ -174,14 +174,14 @@
             <textarea class="form-control" placeholder="Enter your message"></textarea>
         </div>
         <div class="input-box">
-            <button type="submit" class="btn" onclick="submitForm()">Send Message</button>
+            <button type="submit" class="btn active" onclick="submitForm()">Send Message</button>
         </div>
     </form>
 
 </div>
 </section>
     <footer>
-        <p>&copy; 2023 My Online Store. All rights reserved.</p>
+        <p>&copy; <span id="year"></span> Turjjo Halder. All rights reserved.</p>
     </footer>
 
     <script src="main.js"></script>

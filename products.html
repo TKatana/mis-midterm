@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Products - My Online Store</title>
+    <link rel="icon" href="img/33.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -25,41 +26,41 @@
             <div class="grid-item">
                 <img class="product-image" src="img/ZTE Blade V70 Vita-front.png" alt="Product 1">
                 <p>ZTE Smartphone - $19.99</p>
-                <button onclick="buyNow('ZTE Smartphone')">Add to Cart</button>
+                <button onclick="buyNow('ZTE Smartphone')" class="active">Add to Cart</button>
             </div>
             <div class="grid-item">
                 <img class="product-image" src="img/tost maker.webp" alt="Product 2">
                 <p>TostMaker 2 - $29.99</p>
-                <button onclick="buyNow('TostMaker 2')">Add to Cart</button>
+                <button onclick="buyNow('TostMaker 2')" class="active">Add to Cart</button>
             </div>
             <div class="grid-item">
                 <img class="product-image" src="img/smartwatch.png" alt="Product 3">
                 <p>SmartWatch - $39.99</p>
-                <button onclick="buyNow('SmartWatch')">Add to Cart</button>
+                <button onclick="buyNow('SmartWatch')" class="active">Add to Cart</button>
             </div>
             <div class="grid-item">
                 <img class="product-image" src="img/laptop.jpeg" alt="Product 4">
                 <p>Laptop - $49.99</p>
-                <button onclick="buyNow('LAptop')">Add to Cart</button>
+                <button onclick="buyNow('LAptop')" class="active">Add to Cart</button>
             </div>
             <div class="grid-item">
                 <img class="product-image" src="img/smartphone.png" alt="Product 4">
                 <p>Hawai smartphone - $49.99</p>
-                <button onclick="buyNow('Hawai smartphone')">Add to Cart</button>
+                <button onclick="buyNow('Hawai smartphone')" class="active">Add to Cart</button>
             </div>
             <div class="grid-item">
                 <img class="product-image" src="img/camera.png" alt="Product 4">
                 <p>Sony A7II - $999.99</p>
-                <button onclick="buyNow('Sony A7II')">Add to Cart</button>
+                <button onclick="buyNow('Sony A7II')" class="active">Add to Cart</button>
             </div>
             
         </div>
         
 
 
-    <footer>
-        <p>&copy; 2023 My Online Store. All rights reserved.</p>
-    </footer>
+        <footer>
+            <p>&copy; <span id="year"></span> Turjjo Halder. All rights reserved.</p>
+        </footer>
 
     <script src="main.js"></script>
 </body>
