@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - My Online Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> -->
+</head>
+<body>
+    <!-- Name: John Doe, ID: 12345 -->
+    <div class="navbar">
+        <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+        <a href="products.html"><i class="fa fa-fw fa-shopping-basket"></i> Products</a>
+        <a class="active" href="contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+    </div>
+    <br>
+
+<style>
+
+
+.contact {
+    background: #99d1ff;
+    padding: 60px 0;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+}
+.contact-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact .form-control {
+    padding: 20px;
+    font-size: 13px;
+    margin-bottom: 10px;
+    background: #3d98cd;
+    border: 0;
+    border-radius: 10px;
+}
+.contact .info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #333333;
+}
+
+.contact .info i {
+    font-size: 20px;
+    color: #3d98cd;
+    margin-right: 15px;
+}
+
+.contact .info h4 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.contact .info h4 span {
+    font-weight: 400;
+    color: #666666;
+}
+.contact .input-box {
+    position: relative;
+    margin-bottom: 20px;
+    width: 90%;
+}
+.contact-form {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    overflow: hidden;
+    width: 100%;
+}
+
+.contact-form .heading h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #333333;
+}
+
+.contact-form .heading p {
+    font-size: 14px;
+    color: #666666;
+    margin-bottom: 30px;
+}
+
+.contact-form .input-box {
+    margin-bottom: 20px;
+}
+
+.contact-form .form-control {
+    width: 100%;
+    padding: 15px;
+    font-size: 14px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    background: #f9f9f9;
+    color: #333333;
+}
+
+.contact-form .form-control:focus {
+    border-color: #3d98cd;
+    outline: none;
+    background: #ffffff;
+}
+
+.contact-form .btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    background: #ff9100;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact-form .btn:hover {
+    background: #e57c00;
+}
+</style>
+
+<section class="contact" id="contact" >
+<div class="contact-info" >
+    <div class="content" >
+        <div class="info">
+            <i class="fa fa-map-marker"></i>
+            <h4>Location: <span>123 Main Street, Springfield, USA</span></h4>
+        </div>
+        <div class="info">
+            <i class="fa fa-phone"></i>
+            <h4>Phone: <span>+1 234 567 890</span></h4>
+        </div>
+        <div class="info">
+            <i class="fa fa-envelope"></i>
+            <h4>Email: <span>contact@myonlinestore.com</span></h4>
+        </div>
+        <div class="info">
+            <i class="fa fa-clock-o"></i>
+            <h4>Hours: <span>Mon - Fri: 9:00 AM - 6:00 PM</span></h4>
+        </div>
+    </div>
+</div>
+<div class="contact-form">
+    <div class="heading">
+        <h2>Contact Us <span>Today</span></h2>
+        <p>Feel free to contact us for any queries or feedback.</p>
+    </div>
+    <form action="submit">
+        <div class="input-box">
+            <input type="text" class="form-control" placeholder="Enter your name">
+        </div>
+        <div class="input-box">
+            <input type="email" class="form-control" placeholder="Enter your email">
+        </div>
+        <div class="input-box">
+            <input type="text" class="form-control" placeholder="Enter your phone">
+        </div>
+        <div class="input-box">
+            <textarea class="form-control" placeholder="Enter your message"></textarea>
+        </div>
+        <div class="input-box">
+            <button type="submit" class="btn">Send Message</button>
+        </div>
+    </form>
+
+</div>
+</section>
+    <footer>
+        <p>&copy; 2023 My Online Store. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
