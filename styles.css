@@ -1,205 +1,263 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
 }
 
 header {
-    margin-top: 5px;
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
+  margin-top: 5px;
+  background: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
 }
 
 /* Style the navigation bar */
 .navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    
-    width: 100%;
-    background-color: #555;
-    overflow: auto;
-  }
-
-
+  position: fixed;
+  top: 0;
+  left: 0;
   
-  /* Navbar links */
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+
+
+/* Navbar links */
+.navbar a {
+  float: left;
+  text-align: center;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Navbar links on mouse-over */
+.navbar a:hover {
+  background-color: #000;
+}
+
+/* Current/active navbar link */
+.active {
+  background-color: #04AA6D;
+}
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 500px) {
   .navbar a {
-    float: left;
-    text-align: center;
-    padding: 12px;
-    color: white;
-    text-decoration: none;
-    font-size: 17px;
-  }
+    float: none;
+    display: block;
   
-  /* Navbar links on mouse-over */
-  .navbar a:hover {
-    background-color: #000;
   }
-  
-  /* Current/active navbar link */
-  .active {
-    background-color: #04AA6D;
-  }
-  
-  /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
-  @media screen and (max-width: 500px) {
-    .navbar a {
-      float: none;
-      display: block;
-    
-    }
-  }
+}
 
 footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    /* position: fixed; */
-    width: 100%;
-    bottom: 0;
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  /* position: fixed; */
+  width: 100%;
+  bottom: 0;
 }
 
 /* Home Page Flexbox */
 .flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
 }
 
 .flex-item {
-    text-align: center;
-    width: 30%;
+  text-align: center;
+  width: 30%;
 }
 
 /* Products Page Grid */
 .grid-container {
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding: 20px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
 }
 
 .grid-item {
-    
-    text-align: center;
-    border: 1px solid #ccc;
-    padding: 10px;
-    border-radius: 10px;
-    padding: 10px;
-    width: 300px;
-    background: #fff;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
- 
+  
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  width: 300px;
+  background: #fff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+
 }
 @media screen and (max-width: 500px) {
-    .grid-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-    padding: 20px;
-    }
+  .grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  padding: 20px;
+  }
 }
 /* Buttons */
 button {
-    background: #333;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    margin: 20px;
+  background: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 20px;
 }
 
 button:hover {
-    background: #f4c10f;
+  background: #f4c10f;
 }
 
 /* Form Styles */
 form {
-    max-width: 400px;
-    margin: 20px auto;
-    padding: 20px;
-    border: 1px solid #ccc;
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
 }
 
 form label {
-    display: block;
-    margin: 10px 0 5px;
+  display: block;
+  margin: 10px 0 5px;
 }
 
 form input, form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
 }
 
 .product-card {
-  padding: 10px;
-  width: 300px;
-  background: #fff;
-  border-radius: 20px;
-  overflow: hidden;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
- 
+padding: 10px;
+width: 300px;
+background: #fff;
+border-radius: 20px;
+overflow: hidden;
+box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+margin-bottom: 20px;
+
 }
 
 .product-card:hover {
-    background-color: #6d83a3;
+  background-color: #6d83a3;
 
 
 }
 
 .product-image {
-    display: block;
-    margin: 0 auto;
-  width: 290px;
-  height: 290px;
-  object-fit: cover;
-  border-radius: 20px;
+  display: block;
+  margin: 0 auto;
+width: 290px;
+height: 290px;
+object-fit: cover;
+border-radius: 20px;
 }
 .product-image:hover {
-    transition:  transform 0.5s;
-    transform: scale(1.1);
+  transition:  transform 0.5s;
+  transform: scale(1.1);
 }
 .product-info {
-  padding: 8px;
-  text-align: left;
+padding: 8px;
+text-align: left;
 }
 
 .product-info h3 {
-  margin: 10px 0 5px;
-  font-size: 1.2em;
-  color: #2e8b57;
+margin: 10px 0 5px;
+font-size: 1.2em;
+color: #2e8b57;
 }
 
 .product-info p {
-  font-size: 0.95em;
-  color: #555;
-  margin-bottom: 2px;
+font-size: 0.95em;
+color: #555;
+margin-bottom: 2px;
 }
 
 .product-info button {
-  background-color: #2e8b57;
-  color: white;
-  border: none;
-  padding: 5px 10px;
-  font-weight: bold;
-  border-radius: 25px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+background-color: #2e8b57;
+color: white;
+border: none;
+padding: 5px 10px;
+font-weight: bold;
+border-radius: 25px;
+cursor: pointer;
+transition: background-color 0.3s ease;
 }
 
 .product-info button:hover {
-  background-color: #006400;
+background-color: #006400;
+}
+
+.brand-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+  position: relative;
+}
+
+.brand-container {
+  display: flex;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  width: 80%;
+  padding: 10px;
+  gap: 20px;
+}
+
+.brand-logo {
+  height: 100px;
+  width: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.brand-logo:hover {
+  transform: scale(1.1);
+}
+
+.carousel-btn {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  font-size: 18px;
+  border-radius: 50%;
+}
+
+.carousel-btn.left-btn {
+  left: 10px;
+}
+
+.carousel-btn.right-btn {
+  right: 10px;
+}
+
+.carousel-btn:hover {
+  background-color: #555;
+}
+h3 {
+  font-weight: bold;
+  text-align: center;
 }
